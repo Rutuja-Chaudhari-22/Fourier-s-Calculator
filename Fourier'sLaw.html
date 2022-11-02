@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thermal Conductivity</title>
+    <link rel="stylesheet" href="/CSS/Fourier'sLaw.css">
+    <script src="/JS/Fourier'sLaw.js" defer></script>
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="left" id="left">
+            <h1>Result</h1>
+            <div class="result">
+                <h2>Heat Flow <br> Q = <span class="Q"></span></h2>
+            </div>
+        </div>
+            <div class="right">
+                <input type="number" id="K" placeholder="Thermal Conductivity(W/mK)">
+                <input type="number" id="A" placeholder="Area(m&sup2;)">
+                <input type="number" id="L" placeholder="Thickness(m)">
+                <input type="number" id="T1" placeholder="Hot Side Temperature(°C)">
+                <input type="number" id="T2" placeholder="Cold Side Temperature(°C)">
+                <button type="button" id="button" onclick="show_result()">Output</button>
+            </div>
+        <div class="output">
+            <h2 style="color: black; background-color: aliceblue;">Watts</h2>
+        </div>
+    </div>
+</body>
+
+</html>
